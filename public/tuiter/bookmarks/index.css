@@ -25,6 +25,7 @@
   width: 504px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin-block-end: -6px;
 }
 
 .wd-bookmarks-details-menu {
@@ -46,7 +47,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 480px;
-  padding: 12px
+  padding: 12px;
 }
 
 .wd-main-content-text-preview-title {
