@@ -1,0 +1,59 @@
+.wd-body {
+  background-color: black;
+  color: white;
+}
+
+.wd-background-text {
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+  margin-block-start: 3px;
+  margin-block-end: 3px;
+}
+
+.wd-main-text {
+  font-size: 15;
+  color: white;
+}
+
+.wd-border-thin {
+  border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-float-left {
+  float: left;
+  margin-left: 12px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.wd-float-parent:after {
+  content: " "; 
+  display: block;
+  clear: both;
+} 
+
+.wd-float-done {
+  clear: both;
+}
+
+.wd-position-absolute {
+  position: absolute
+}
+
+.wd-position-relative {
+  position: relative;
+}
