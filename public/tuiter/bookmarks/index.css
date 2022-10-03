@@ -1,12 +1,16 @@
 .wd-page-title-container {
   padding-left: 16px;
-  padding-bottom: 8px;
   padding-top: 12px;
   font-size: 20px;
 }
 
 .wd-bookmark-container {
+  width: 598px;
+  padding-top:12px;
   padding-left: 16px;
+  border-width: 0px 1px 1px 0px;
+  border-color: rgb(47, 51, 54);
+  border-style: solid;
 }
 
 .wd-avatar-img {
@@ -67,11 +71,10 @@
   margin-block-end: 0px;
 }
 
-.wd-border-bottom-thin-with-margin {
+.wd-border-bottom-thin {
   border-width: 0px 0px 1px 0px;
   border-color: rgb(47, 51, 54);
   border-style: solid;
-  margin-bottom: 16px;
 }
 
 .wd-border-thin-no-top {
