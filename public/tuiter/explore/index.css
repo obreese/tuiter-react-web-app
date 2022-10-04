@@ -1,143 +1,29 @@
-.wd-page-div {
-  /* padding: 16px; */
+.wd-tabs li {
+  display: inline;
 }
 
-
-
-.wd-border-top-bottom-thin {
-  border-width: 1px 0px 1px 0px;
-  border-color: rgb(47, 51, 54);
-  border-style: solid;
+.wd-tabs {
+  padding-left: 0px;
 }
 
-.wd-border-bottom-medium-with-margin {
-  border-width: 0px 0px 3px 0px;
-  border-color: rgb(47, 51, 54);
-  border-style: solid;
-  margin-bottom: 16px;
+.wd-selected {
+   border-bottom: 2px blue solid;
+   padding-bottom: 20px;
 }
 
-
-
-
-
-.wd-float-left {
-  float: left;
-  margin-left: 12px;
-  width: 90%
-  /* TODO WIDTH */
+.wd-nudge-up {
+  bottom: 8px;
+  left: 25px;
 }
 
-
-.wd-float-right {
-  float: right;
-  margin-right: 12px;
+.wd-show-overflow {
+  overflow: visible;
 }
 
-.wd-input-field-container {
-  padding-right: 100px;
-  display: block;
+.wd-hide-overflow {
+  overflow: hidden;
 }
 
-.wd-input-field {
-  border-radius: 40px;
-  height: 30px;
-  background-color: rgb(47, 51, 54);
-  color: white;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-left: 16px;
-  margin-right: 32px;
-  width: 100%;
-  border-width: 0px;
+.wd-z1 {
+  z-index: 1;
 }
-
-.wd-gear-icon {
-  position: absolute;
-  color: rgb(29, 161, 242);
-  font-size: 28px;
-  right: 12px;
-  top: 10px;
-}
-
-
-
-.wd-tab-selected {
-  border-width: 0px 0px 4px 0px;
-  border-color: rgb(29, 161, 242);
-  border-style: solid;
-}
-
-.wd-tab {
-  float: left;
-  padding: 16px;
-  size: 15px;
-}
-
-.wd-tab .wd-tab-text-selected {
-  color: rgb(29, 161, 242);
-}
-
-.wd-tab-text-unselected {
-  color: rgb(110, 118, 125);
-} 
-/* todo change to background text  */
-
-.wd-tuit {
-  padding: 16px;
-  font-size: 13px;
-  color: rgb(110, 118, 125);
-  position: relative;
-  height: 60px;
-}
-
-.wd-tuit-with-img {
-  height: 100px;
-}
-
-.wd-tuit-info-text {
-  margin-block-start: 3px;
-  margin-block-end: 3px;
-}
-
-.wd-tuit-title {
-  font-size: 16px;
-  color: white;
-}
-
-.wd-tuit-author {
-  color: white;
-}
-
-.wd-tuit-author-profile-img-mini {
-  height: 13px;
-  border-radius: 8px;
-}
-
-.wd-tuit-preview-img {
-  border-radius: 10px;
-  position: absolute;
-  top: 16px;
-  right: 0px;
-  height: 100px;
-  width: 100px;
-}
-
-.wd-details-menu {
-  position: absolute;
-  right: 16px;
-  top: -6px;
-  font-size: 16px;
-  color: white
-}
-
-.wd-details-menu-tuit {
-  color: rgb(110, 118, 125);
-  right: 16px;
-  top: 6px;
-}
-
-.wd-parent-div {
-  position: relative;
-}
-

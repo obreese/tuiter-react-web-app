@@ -3,96 +3,126 @@
   <head>
     <meta charset="utf-8" />
     <title>tuiter</title>
-    <link href="../styles.css" rel="stylesheet" />
+    <link
+      href="../../vendors/bootstrap-5.1.3-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../vendors/fontawesome-free-5.15.4-web/css/all.css"
+      rel="stylesheet"
+    />
     <link href="index.css" rel="stylesheet" />
   </head>
-  <body class="wd-body">
-    <div class="wd-border-thin">
-      <div class="wd-position-relative ">
-        <span class="wd-input-field-container">
-          <input
-          class="wd-input-field"
-          placeholder="    &#x1F50D&#xFE0E Search Tuiter"
-        />
-        </span>
-        <a class="wd-gear-icon" href="explore-settings.html">&#x2699</a>
-      </div>
-      <div class="wd-float-parent wd-border-bottom-medium-with-margin">
-        <div class="wd-tab wd-tab-selected wd-float-done">
-          <a class="wd-tab-text-selected" href="">For you</a>
-        </div>
-        <div class="wd-tab">
-          <a class="wd-tab-text-unselected" href="">Trending</a>
-        </div>
-        <div class="wd-tab">
-          <a class="wd-tab-text-unselected" href="">COVID-19</a>
-        </div>
-        <div class="wd-tab">
-          <a class="wd-tab-text-unselected" href="">News</a>
-        </div>
-        <div class="wd-tab">
-          <a class="wd-tab-text-unselected" href="">Sports</a>
-        </div>
-        <div class="wd-tab">
-          <a class="wd-tab-text-unselected" href="">Entertainment</a>
-        </div>
-      </div>
-      <div class="wd-parent-div">
-        <a class="wd-details-menu" href="">
-          ...
-        </a>
-        <div class="wd-tuit wd-border-top-bottom-thin">
-          <a class="wd-details-menu wd-details-menu-tuit" href="">
-            ...
-          </a>
-            <p class="wd-tuit-info-text"> Trending in Science</p>
-          <a class="wd-tuit-title" href="" >Webb Telescope Pictures</a>
-          <p class="wd-tuit-info-text">123 Tuits</p>
-        </div>
-        <div class="wd-tuit wd-border-top-bottom-thin">
-          <a class="wd-details-menu wd-details-menu-tuit" href="">
-            ...
-          </a>
-          <p class="wd-tuit-info-text">Trending in Sports</p>
-          <a class="wd-tuit-title" href="" >Red Sox fans get your Student 9s!</a>
-          <p class="wd-tuit-info-text">234 Tuits</p>
-        </div>
-        <div class="wd-tuit wd-tuit-with-img wd-border-top-bottom-thin">
-          <p class="wd-tuit-info-text">
-            <a class="wd-tuit-author" href="">
-              <img class="wd-tuit-author-profile-img-mini" src="../../images/caamp_profile.jfif"/>
-              CAAMP &#9745
+  <body>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="d-none d-sm-inline col-2">
+          <div class="list-group">
+            <a href="#" class="list-group-item">
+              <i class="fas fa-twitter"></i>
             </a>
-            &#183 last week
-          </p>
-          <a class="wd-tuit-title" href="" >Caamp concert packs seaport venue</a>
-          <img class="wd-tuit-preview-img" src="../../images/Caamp.jpg"/>
-        </div>
-        <div class="wd-tuit wd-tuit-with-img wd-border-top-bottom-thin">
-          <p class="wd-tuit-info-text">
-            <a class="wd-tuit-author position-relative" href="">
-              <img class="wd-tuit-author-profile-img-mini" src="../../images/nuhoc_profile.png"/>
-              NUHOC &#9745
+            <a href="#" class="list-group-item">
+              <i class="fas fa-home"></i>
+              <span class="d-none d-xl-inline">Home</span>
             </a>
-            &#183 1 month ago
-          </p>
-          <a class="wd-tuit-title" href="" >New Loj!?!?!?!</a>
-          <img class="wd-tuit-preview-img" src="../../images/nuhoc_loj.jpg"/>
+            <a href="#" class="list-group-item">
+              <i class="fas fa-hashtag"></i>
+              <span class="d-none d-xl-inline">Explore</span>
+            </a>
+            <a href="#" class="list-group-item">
+              <i class="fas fa-bell"></i>
+              <span class="d-none d-xl-inline">Notifications</span>
+            </a>
+            <a href="#" class="list-group-item">
+              <i class="fas fa-envelope"></i>
+              <span class="d-none d-xl-inline">Messages</span>
+            </a>
+            <a href="#" class="list-group-item">
+              <i class="fas fa-bookmark"></i>
+              <span class="d-none d-xl-inline">Bookmarks</span>
+            </a>
+            <a href="#" class="list-group-item">
+              <i class="fas fa-list"></i>
+              <span class="d-none d-xl-inline">Lists</span>
+            </a>
+            <a href="#" class="list-group-item">
+              <i class="fas fa-user"></i>
+              <span class="d-none d-xl-inline">Profile</span>
+            </a>
+            <a href="#" class="list-group-item">
+              <i class="fas fa-circle-ellipsis"></i>
+              <span class="d-none d-xl-inline">More</span>
+            </a>
+          </div>
+          <button class="btn btn-primary rounded-pill w-100 mt-2">Tuit</button>
         </div>
-        <div class="wd-tuit wd-tuit-with-img wd-border-top-bottom-thin">
-          <p class="wd-tuit-info-text">
-            News &#183 LIVE
-          </p>
-          <a class="wd-tuit-title" href="" >Italy's soon to be PM speaking</a>
-          <img class="wd-tuit-preview-img" src="../../images/italy_pm.jfif"/>
+        <div class="col-sm-10 col-lg-7 col-xl-7 col-xxl-6">
+            <div class="row">
+              <div class="col-11 position-relative">
+                <input
+                  placeholder="Search Tuiter"
+                  class="form-control rounded-pill ps-5"
+                />
+                <i class="fas fa-magnifying-glass position-absolute wd-nudge-up"></i>
+              </div>
+              <div class="col-1">
+                <i class="fas fa-gear float-end"></i>
+              </div>
+            </div>
+            <ul class="nav nav-tabs mt-2">
+              <li class="nav-item">
+                <a class="nav-link active">For You</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Sports</a>
+              </li>
+              <li class="nav-item d-none d-lg-inline">
+                <a class="nav-link">Entertainment</a>
+              </li>
+            </ul>
+            <div class="position-relative">
+              <img src="../../images/starship.jpg" class="w-100" />
+              <h1>SpaceX Starship</h1>
+            </div>
+          <div class="col-md-3 col-xl-3 col-xxl-4"div>
         </div>
-        <div class="wd-tuit wd-tuit-with-img wd-border-top-bottom-thin">
-          <p class="wd-tuit-info-text">
-            COVID-19 &#183 LIVE
-          </p>
-          <a class="wd-tuit-title" href="" >Fauci on second booster symptoms</a>
-          <img class="wd-tuit-preview-img" src="../../images/booster_img.jpg"/>
-        </div>
+      </div>
+      <div class="d-none d-lg-inline col-lg-3 col-xxl-4">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-2 col-lg-4">Image</div>
+              <div class="col-md-8 col-lg-4 wd-show-overflow">Java</div>
+              <div class="col-md-2 col-lg-4">
+                <button class="btn btn-primary rounded-pill float-end">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item wd-hide-overflow">
+            <div class="row ">
+              <div class="col-md-2 col-lg-4"><img src="../../images/nuhoc_profile.png" class="rounded-circle" width="50px"></div>
+              <div class="col-md-8 col-lg-4 wd-z1">aaaaaaaaaaaaaaaaa</div>
+              <div class="col-md-2 col-lg-4">
+                <button class="btn btn-primary rounded-pill float-end">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-2 col-lg-4">Image</div>
+              <div class="col-md-8 col-lg-4 wd-show-overflow">Java</div>
+              <div class="col-md-2 col-lg-4">
+                <button class="btn btn-primary rounded-pill float-end">Follow</button>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
