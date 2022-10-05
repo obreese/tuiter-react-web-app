@@ -12,7 +12,7 @@
 }
 
 .wd-nudge-up {
-  bottom: 8px;
+  bottom: 10px;
   left: 25px;
 }
 
@@ -27,3 +27,14 @@
 .wd-z1 {
   z-index: 1;
 }
+
+.wd-color-white {
+  color: white;
+}
+
+
+.wd-center-of-icon {
+  left: 2px;
+  top: 2px;
+}
+
