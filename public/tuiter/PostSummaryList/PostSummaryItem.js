@@ -4,9 +4,9 @@ const PostSummaryItem = (post) => {
     <div class="row">
       <div class="col-8 col-md-9">
         <div class="text-secondary">${post.topic}</div>
-        <div class="fw-bold">${
-          post.userName
-        }<span class="fw-normal text-secondary"> - ${post.time}</span></div>
+        <div class="fw-bold">${post.userName}
+        <span class="fw-normal text-secondary"> - ${post.time}</span>
+        </div>
         <div class="fw-bold">${post.title}</div>
         ${
           post.tuits
