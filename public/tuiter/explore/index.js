@@ -5,7 +5,6 @@ import NavigationSidebar from "../NavigationSidebar/index.js";
 import WhoToFollowList from "../WhoToFollowList/WhoToFollowList.js";
 
 function exploreComponent() {
-  console.log();
   $("#wd-explore").append(`
       <div class="row mt-2">
         <div class="d-none d-sm-inline col-sm-2 col-lg-1 col-xl-2">

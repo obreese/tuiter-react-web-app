@@ -59,7 +59,7 @@ const ExploreComponent = () => {
 <div class="position-relative">
   <img src="../../images/spacex_starship.jfif" class="w-100" />
   <h1 class="position-absolute wd-nudge-up text-white">
-    SpaceX Starship
+    <span class="fw-bold wd-color-dark small">SpaceX Starship</span>
   </h1>
 </div>
 <div>

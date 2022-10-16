@@ -3,7 +3,7 @@ import posts from "./posts.js";
 
 const PostSummaryList = () => {
   return `
-  <ul class="list-group">
+  <ul class="list-group wd-margin-top">
   ${posts
     .map((each) => {
       return PostSummaryItem(each);
