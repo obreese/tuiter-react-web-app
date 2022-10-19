@@ -1,0 +1,63 @@
+const NavigationSidebar = (active) => {
+  return `
+  <div class="list-group">
+  <a href="#" class="list-group-item">
+    <i
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-twitter"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+        />
+      </svg></i>
+  </a>
+  <a href="../HomeScreen/index.html" class="list-group-item ${
+    active === "home" ? "active" : ""
+  }">
+    <i class="fas fa-home"></i>
+    <span class="d-none d-xl-inline">Home</span>
+  </a>
+  <a href="../ExploreScreen/index.html" class="list-group-item ${
+    active === "explore" ? "active" : ""
+  }">
+    <i class="fas fa-hashtag"></i>
+    <span class="d-none d-xl-inline">Explore</span>
+  </a>
+  <a href="#" class="list-group-item ${
+    active === "notifications" ? "active" : ""
+  }">
+    <i class="fas fa-bell"></i>
+    <span class="d-none d-xl-inline">Notifications</span>
+  </a>
+  <a href="#" class="list-group-item ${active === "messages" ? "active" : ""}">
+    <i class="fas fa-envelope"></i>
+    <span class="d-none d-xl-inline">Messages</span>
+  </a>
+  <a href="#" class="list-group-item ${active === "bookmarks" ? "active" : ""}">
+    <i class="fas fa-bookmark"></i>
+    <span class="d-none d-xl-inline">Bookmarks</span>
+  </a>
+  <a href="#" class="list-group-item ${active === "lists" ? "active" : ""}">
+    <i class="fas fa-list"></i>
+    <span class="d-none d-xl-inline">Lists</span>
+  </a>
+  <a href="#" class="list-group-item ${active === "profile" ? "active" : ""}">
+    <i class="fas fa-user"></i>
+    <span class="d-none d-xl-inline">Profile</span>
+  </a>
+  <a href="#" class="list-group-item ${active === "more" ? "active" : ""}">
+    <i class="fas fa-circle position-relative">
+      <i class="fas fa-ellipsis-h fa-xs wd-z1 position-absolute wd-center-of-icon wd-color-white"></i>
+    </i>
+    <span class="d-none d-xl-inline">More</span>
+  </a>
+</div>
+<button class="btn btn-primary rounded-pill w-100 mt-2">Tuit</button>
+  `;
+};
+export default NavigationSidebar;

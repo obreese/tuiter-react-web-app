@@ -7,12 +7,12 @@
 }
 
 .wd-selected {
-   border-bottom: 2px blue solid;
-   padding-bottom: 20px;
+  border-bottom: 2px blue solid;
+  padding-bottom: 20px;
 }
 
 .wd-nudge-up {
-  bottom: 8px;
+  bottom: 10px;
   left: 25px;
 }
 
@@ -26,4 +26,21 @@
 
 .wd-z1 {
   z-index: 1;
+}
+
+.wd-color-white {
+  color: white;
+}
+
+.wd-color-dark {
+  color: rgb(47, 51, 54);
+}
+
+.wd-center-of-icon {
+  left: 2px;
+  top: 2px;
+}
+
+.wd-margin-top {
+  margin-top: 10px;
 }
