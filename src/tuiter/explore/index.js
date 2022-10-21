@@ -24,7 +24,7 @@ const ExploreComponent = () => {
           </i>
         </div>
         <div class="col-1">
-          <a href="#">
+          <a href="/">
             <i class="float-end text-primary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,23 +42,23 @@ const ExploreComponent = () => {
       </div>
       <ul className="nav nav-pills my-2">
         <li className="nav-item">
-          <a href="#" className="nav-link active">
+          <a href="/" className="nav-link active">
             For You
           </a>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <a href="/" className="nav-link">
             Trending
           </a>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <a href="/" className="nav-link">
             News
           </a>
         </li>
       </ul>
       <div className="position-relative mb-2">
-        <img src="/images/spacex_starship.jfif" className="w-100" />
+        <img alt="" src="/images/spacex_starship.jfif" className="w-100" />
         <h1 className="position-absolute wd-nudge-up text-white">
           SpaceX Starship
         </h1>
