@@ -6,8 +6,9 @@ import {
   EmojiSmile,
   GeoAlt,
 } from "react-bootstrap-icons";
-import { createTuit } from "../tuits/tuits-reducer";
+
 import { useDispatch } from "react-redux";
+import { createTuitThunk } from "../services/tuits-thunks";
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState("");
@@ -16,7 +17,7 @@ const WhatsHappening = () => {
     const newTuit = {
       tuit: whatsHappening,
     };
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
   };
 
   return (

@@ -1,4 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import {
+  deleteTuitThunk,
+  findTuitsThunk,
+  createTuitThunk,
+} from "../services/tuits-thunks";
 import tuits from "./tuits.json";
 
 const currentUser = {
@@ -19,7 +24,41 @@ const templateTuit = {
 
 const tuitsSlice = createSlice({
   name: "tuits",
-  initialState: tuits,
+  initialState: [],
+  extraReducers: {
+    [findTuitsThunk.pending]: (state, action) => {
+      state.loading = true;
+      state.tuits = [];
+    },
+    [findTuitsThunk.fulfilled]: (state, action) => {
+      state.loading = false;
+      state.tuits = action.payload;
+    },
+    [findTuitsThunk.rejected]: (state, action) => {},
+    [deleteTuitThunk.pending]: (state, action) => {
+      state.loading = true;
+      state.tuits = [];
+    },
+    [deleteTuitThunk.fulfilled]: (state, action) => {
+      const index = state.tuits.findIndex(
+        (tuit) => tuit._id === action.payload
+      );
+      state.splice(index, 1);
+    },
+    [deleteTuitThunk.rejected]: (state, action) => {},
+    [createTuitThunk.pending]: (state, action) => {
+      state.loading = true;
+      state.tuits = [];
+    },
+    [createTuitThunk.fulfilled]: (state, action) => {
+      const index = state.tuits.findIndex(
+        // todo
+        (tuit) => tuit._id === action.payload
+      );
+      state.splice(index, 1);
+    },
+    [createTuitThunk.rejected]: (state, action) => {},
+  },
   reducers: {
     createTuit(state, action) {
       state.unshift({
