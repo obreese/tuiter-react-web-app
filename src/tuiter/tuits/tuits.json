@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 0,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "image": "spacex_logo.jpg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+  {
+    "_id": 1,
+    "topic": "Cars",
+    "userName": "Tesla",
+    "time": "3h",
+    "title": "Lorem ipsum 2",
+    "image": "tesla_logo.jpg",
+    "liked": false,
+    "replies": 234,
+    "retuits": 543,
+    "likes": 3456,
+    "handle": "@tesla",
+    "tuit": "Pellentesque sit amet massa nec diam elementum egestas. Donec fermentum nibh magna, vel auctor ipsum rhoncus ac. Etiam vulputate neque at metus molestie, a commodo libero auctor. Vestibulum porttitor quam a nibh euismod convallis. Morbi dui libero, viverra quis est vitae, interdum efficitur justo. Vestibulum dignissim hendrerit elit non accumsan. Donec congue scelerisque egestas."
+  },
+  {
+    "_id": 2,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "4h",
+    "title": "Lorem ipsum 1",
+    "image": "spacex_logo.jpg",
+    "liked": true,
+    "replies": 345,
+    "retuits": 654,
+    "likes": 4567,
+    "handle": "@spacex",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac magna pellentesque nisi molestie condimentum. Nunc ornare massa id sollicitudin sodales. Sed volutpat tellus odio, ut sollicitudin dolor cursus vitae. Suspendisse faucibus scelerisque nibh et commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis tempor semper. Vestibulum ac dolor sapien. Nunc a dolor semper, aliquet libero id, pharetra lectus. Praesent mollis auctor nisl et eleifend. Praesent gravida dolor finibus pulvinar tempor. Quisque varius massa ut ex condimentum elementum. Nam finibus, velit sed tristique fringilla, purus ligula imperdiet sem, id pellentesque magna nisl ultrices lectus. Cras luctus massa id lobortis pellentesque. Phasellus at purus finibus, dignissim enim at, placerat diam."
+  }
+]
