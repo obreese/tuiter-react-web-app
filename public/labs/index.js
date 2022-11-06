@@ -7,3 +7,5 @@ function Labs() {
     </div>
   );
 }
+
+export default Labs;
