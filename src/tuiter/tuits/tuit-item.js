@@ -1,19 +1,13 @@
 import React from "react";
-import {
-  Heart,
-  HeartFill,
-  Chat,
-  ArrowClockwise,
-  Share,
-  X,
-} from "react-bootstrap-icons";
+import { X } from "react-bootstrap-icons";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "./tuits-reducer";
+import { deleteTuitThunk } from "../../services/tuits-thunks";
+import TuitStats from "./tuit-stats";
 
 const TuitItem = ({ tuit }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
 
   return (
@@ -33,26 +27,12 @@ const TuitItem = ({ tuit }) => {
             onClick={() => deleteTuitHandler(tuit._id)}
           />
           <div>
-            {tuit.userName} . {tuit.time}
+            {tuit.username} . {tuit.time}
           </div>
           <div>{tuit.tuit}</div>
         </div>
       </div>
-      <div className="row">
-        <Chat className="col-1" />
-        <p className="col-1">{tuit.replies}</p>
-        <ArrowClockwise className="col-1" />
-        <p className="col-1">{tuit.retuits}</p>
-        {tuit.liked ? (
-          <HeartFill className="col-1 wd-color-red" />
-        ) : (
-          <Heart className="col-1" />
-        )}
-
-        <p className="col-1">{tuit.likes}</p>
-        <Share className="col-1" />
-        <p className="col-1">{tuit.likes}</p>
-      </div>
+      <TuitStats tuit={tuit} />
     </li>
   );
 };

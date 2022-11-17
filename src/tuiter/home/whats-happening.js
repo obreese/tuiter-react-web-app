@@ -8,7 +8,7 @@ import {
 } from "react-bootstrap-icons";
 
 import { useDispatch } from "react-redux";
-import { createTuitThunk } from "../services/tuits-thunks";
+import { createTuitThunk } from "../../services/tuits-thunks";
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState("");
@@ -16,6 +16,10 @@ const WhatsHappening = () => {
   const tuitClickHandler = () => {
     const newTuit = {
       tuit: whatsHappening,
+      likes: 0,
+      liked: false,
+      dislikes: 0,
+      disliked: false,
     };
     dispatch(createTuitThunk(newTuit));
   };
