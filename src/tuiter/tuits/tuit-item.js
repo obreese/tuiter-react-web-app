@@ -7,7 +7,6 @@ import TuitStats from "./tuit-stats";
 const TuitItem = ({ tuit }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    console.log("AHH", id);
     dispatch(deleteTuitThunk(id));
   };
 
